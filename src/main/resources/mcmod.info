@@ -1,0 +1,16 @@
+[
+{
+  "modid": "yetanotherskyblockmod",
+  "name": "YetAnotherSkyblockMod",
+  "description": "Yet Another Skyblock Mod",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["DJtheRedstoner"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
