@@ -2,7 +2,8 @@ package me.djtheredstoner.yetanotherskyblockmod.asm;
 
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
-import me.djtheredstoner.yetanotherskyblockmod.asm.transformers.PownsHudRendererTransformer;
+import me.djtheredstoner.yetanotherskyblockmod.asm.transformers.PownsArmorHudRendererTransformer;
+import me.djtheredstoner.yetanotherskyblockmod.asm.transformers.PownsPotionHudRendererTransformer;
 import net.minecraft.launchwrapper.IClassTransformer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -31,7 +32,8 @@ public class ClassTransformer implements IClassTransformer {
 
     public ClassTransformer() {
         // any transformer will be registered here
-        registerTransformer(new PownsHudRendererTransformer());
+        registerTransformer(new PownsPotionHudRendererTransformer());
+        registerTransformer(new PownsArmorHudRendererTransformer());
     }
 
     private void registerTransformer(ITransformer transformer) {

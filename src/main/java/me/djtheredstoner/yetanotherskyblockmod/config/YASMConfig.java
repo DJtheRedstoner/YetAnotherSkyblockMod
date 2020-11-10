@@ -16,6 +16,14 @@ public class YASMConfig extends Vigilant {
     )
     public boolean hidePownsPotionHud;
 
+    @Property(
+        type = PropertyType.SWITCH,
+        name = "Hide Powns Armor Hud In Skyblock",
+        category = "General",
+        subcategory = "Hide Other Mods in Skyblock"
+    )
+    public boolean hidePownsArmorHud;
+
     public YASMConfig() {
         super(new File("./config/yetanotherskyblockmod.toml"));
         initialize();

@@ -8,7 +8,7 @@ import java.util.ListIterator;
 
 import static org.objectweb.asm.Opcodes.*;
 
-public class PownsHudRendererTransformer implements ITransformer {
+public class PownsPotionHudRendererTransformer implements ITransformer {
     @Override
     public String[] getClassName() {
         return new String[]{"me.powns.potionhud.gui.HudRenderer"};
@@ -27,7 +27,7 @@ public class PownsHudRendererTransformer implements ITransformer {
                     if(next.getOpcode() == GETFIELD && next.getNext().getOpcode() == IFNULL) {
                         FieldInsnNode insn = (FieldInsnNode) next;
                        if(insn.owner.equals("net/minecraft/client/Minecraft") && insn.desc.equals("Lnet/minecraft/client/gui/GuiScreen;")) {
-                            method.instructions.insertBefore(insn.getPrevious().getPrevious().getPrevious(), insertPownsHook());
+                            method.instructions.insertBefore(insn.getPrevious().getPrevious().getPrevious(), insertPownsPotionHudHook());
                        }
                     }
                 }
@@ -36,7 +36,7 @@ public class PownsHudRendererTransformer implements ITransformer {
         }
     }
 
-    private InsnList insertPownsHook() {
+    private InsnList insertPownsPotionHudHook() {
         InsnList list = new InsnList();
         list.add(new LdcInsnNode("pownsPotionHud"));
         list.add(new MethodInsnNode(INVOKESTATIC, ClassTransformer.hookClass, "isSkyblock", "(Ljava/lang/String;)Z", false));

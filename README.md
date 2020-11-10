@@ -18,3 +18,4 @@ Configure the mod with `/yasm`
 | Mod | Tested Mod Version  | Notes |
 | :---: | :---: | :--- |
 | [Powns' Potion HUD](https://www.youtube.com/watch?v=yI4p-2eK7yw) | 1.0 | Download link in video description
+| [Powns' Armor HUD](https://download.powns.dev/armorhud189) | 1.1 | Hides all 5 elements

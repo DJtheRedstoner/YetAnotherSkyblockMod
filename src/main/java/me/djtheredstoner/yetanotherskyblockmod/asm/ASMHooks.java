@@ -14,6 +14,9 @@ public class ASMHooks {
                 case "pownsPotionHud":
                     shouldDisable = config.hidePownsPotionHud;
                     break;
+                case "pownsArmorHud":
+                    shouldDisable = config.hidePownsArmorHud;
+                    break;
                 default:
                     shouldDisable = false;
             }
