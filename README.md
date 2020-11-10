@@ -3,6 +3,8 @@
 YetAnotherSkyblockMod (or YASM for short) is my contribution to the
 collection of horribly made mods created because of Hypixel Skyblock.
 
+Configure the mod with `/yasm`
+
 # Discord
 
 [![widget](https://inv.wtf/widget/djl)](https://inv.wtf/djl)
