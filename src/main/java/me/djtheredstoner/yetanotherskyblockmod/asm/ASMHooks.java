@@ -17,6 +17,9 @@ public class ASMHooks {
                 case "pownsArmorHud":
                     shouldDisable = config.hidePownsArmorHud;
                     break;
+                case "guiIngameAbsorption":
+                    shouldDisable = config.hideAbsorption;
+                    break;
                 default:
                     shouldDisable = false;
             }

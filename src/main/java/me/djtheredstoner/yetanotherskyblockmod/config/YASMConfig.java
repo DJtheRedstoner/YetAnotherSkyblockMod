@@ -10,19 +10,30 @@ public class YASMConfig extends Vigilant {
 
     @Property(
         type = PropertyType.SWITCH,
-        name = "Hide Powns Potion Hud In Skyblock",
+        name = "Hide Potion HUD",
+        description = "Hides powns' potion HUD in skyblock.",
         category = "General",
-        subcategory = "Hide Other Mods in Skyblock"
+        subcategory = "HUD Elements"
     )
     public boolean hidePownsPotionHud;
 
     @Property(
         type = PropertyType.SWITCH,
-        name = "Hide Powns Armor Hud In Skyblock",
+        name = "Hide Armor HUD",
+        description = "Hides powns' armor HUD in skyblock.",
         category = "General",
-        subcategory = "Hide Other Mods in Skyblock"
+        subcategory = "HUD Elements"
     )
     public boolean hidePownsArmorHud;
+
+    @Property(
+        type = PropertyType.SWITCH,
+        name = "Hide Absorption Hearts",
+        description = "Hides absorption hearts in skyblock.",
+        category = "General",
+        subcategory = "HUD Elements"
+    )
+    public boolean hideAbsorption;
 
     public YASMConfig() {
         super(new File("./config/yetanotherskyblockmod.toml"));

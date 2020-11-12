@@ -12,6 +12,7 @@ Configure the mod with `/yasm`
 # Features
 
 - Hide other HUD mods in skyblock (See the table below for currently supported mods)
+- Hide absorption hearts in skyblock
 
 # Curently Supported Mods
 
