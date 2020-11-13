@@ -1,21 +1,29 @@
+<div align="center">
+  
 # YetAnotherSkyblockMod
+
+My contribution to the collection of horribly made mods created because of Hypixel Skyblock.
+
+</div>
+
+## About
 
 YetAnotherSkyblockMod (or YASM for short) is my contribution to the
 collection of horribly made mods created because of Hypixel Skyblock.
 
 Configure the mod with `/yasm`
 
-# Discord
+## Discord
 
 [![widget](https://inv.wtf/widget/djl)](https://inv.wtf/djl)
 
-# Features
+## Features
 
 - Hide other HUD mods in skyblock (See the table below for currently supported mods)
 - Hide absorption hearts in skyblock
 - Slayer boss oof sound (requires oof mod)
 
-# Curently Supported Mods
+## Curently Supported Mods
 
 | Mod | Tested Mod Version  | Notes |
 | :---: | :---: | :--- |
