@@ -3,6 +3,7 @@ package me.djtheredstoner.yetanotherskyblockmod.asm;
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
 import me.djtheredstoner.yetanotherskyblockmod.asm.transformers.GuiIngameForgeTransformer;
+import me.djtheredstoner.yetanotherskyblockmod.asm.transformers.OofModTransformer;
 import me.djtheredstoner.yetanotherskyblockmod.asm.transformers.PownsArmorHudRendererTransformer;
 import me.djtheredstoner.yetanotherskyblockmod.asm.transformers.PownsPotionHudRendererTransformer;
 import net.minecraft.launchwrapper.IClassTransformer;
@@ -36,6 +37,7 @@ public class ClassTransformer implements IClassTransformer {
         registerTransformer(new PownsPotionHudRendererTransformer());
         registerTransformer(new PownsArmorHudRendererTransformer());
         registerTransformer(new GuiIngameForgeTransformer());
+        registerTransformer(new OofModTransformer());
     }
 
     private void registerTransformer(ITransformer transformer) {

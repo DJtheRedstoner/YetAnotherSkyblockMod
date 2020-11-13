@@ -4,11 +4,13 @@ import club.sk1er.mods.core.util.MinecraftUtils;
 import com.google.common.collect.Sets;
 import me.djtheredstoner.yetanotherskyblockmod.commands.YASMCommand;
 import me.djtheredstoner.yetanotherskyblockmod.config.YASMConfig;
+import me.djtheredstoner.yetanotherskyblockmod.listeners.YASMListener;
 import net.minecraft.client.Minecraft;
 import net.minecraft.scoreboard.ScoreObjective;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraftforge.client.ClientCommandHandler;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -26,6 +28,7 @@ public class YetAnotherSkyblockMod {
 
     public YASMConfig config = new YASMConfig();
     public boolean isOnSkyblock = false;
+    public boolean oofModDetected = false;
 
 
     @Mod.EventHandler
@@ -35,7 +38,10 @@ public class YetAnotherSkyblockMod {
         config.preload();
 
         MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(new YASMListener());
         ClientCommandHandler.instance.registerCommand(new YASMCommand());
+
+        oofModDetected = Loader.isModLoaded("refractionoof");
     }
 
     @SubscribeEvent

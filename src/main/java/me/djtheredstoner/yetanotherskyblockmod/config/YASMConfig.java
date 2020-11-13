@@ -35,6 +35,15 @@ public class YASMConfig extends Vigilant {
     )
     public boolean hideAbsorption;
 
+    @Property(
+        type = PropertyType.SWITCH,
+        name = "Slayer Boss Oof",
+        description = "Plays Oof sound when you kill a slayer boss.\n§cRequires Oof Mod.",
+        category = "General",
+        subcategory = "Sound Effects"
+    )
+    public boolean slayerOof;
+
     public YASMConfig() {
         super(new File("./config/yetanotherskyblockmod.toml"));
         initialize();

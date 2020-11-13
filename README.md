@@ -13,6 +13,7 @@ Configure the mod with `/yasm`
 
 - Hide other HUD mods in skyblock (See the table below for currently supported mods)
 - Hide absorption hearts in skyblock
+- Slayer boss oof sound (requires oof mod)
 
 # Curently Supported Mods
 
