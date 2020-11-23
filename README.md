@@ -30,4 +30,5 @@ Configure the mod with `/yasm`
 | :---: | :---: | :--- |
 | [Powns' Potion HUD](https://www.youtube.com/watch?v=yI4p-2eK7yw) | 1.0 | Download link in video description
 | [Powns' Armor HUD](https://download.powns.dev/armorhud189) | 1.1 | Hides all 5 elements
+| [Oof Mod](https://www.youtube.com/watch?v=bUelJG5kGK0) | 2.0.2 | Required for slayer boss oof
 | [Patcher](https://sk1er.club/mods/patcher) | 1.5-beta2 | Hides damage, count and enchant glance, hides armor protection percentage
