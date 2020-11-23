@@ -22,6 +22,7 @@ Configure the mod with `/yasm`
 - Hide other HUD mods in skyblock (See the table below for currently supported mods)
 - Hide absorption hearts in skyblock
 - Slayer boss oof sound (requires oof mod)
+- Quickly report party advertisement bots with `/preport` or `/partyreport`
 
 ## Curently Supported Mods
 
@@ -29,3 +30,4 @@ Configure the mod with `/yasm`
 | :---: | :---: | :--- |
 | [Powns' Potion HUD](https://www.youtube.com/watch?v=yI4p-2eK7yw) | 1.0 | Download link in video description
 | [Powns' Armor HUD](https://download.powns.dev/armorhud189) | 1.1 | Hides all 5 elements
+| [Patcher](https://sk1er.club/mods/patcher) | 1.5-beta2 | Hides damage, count and enchant glance, hides armor protection percentage

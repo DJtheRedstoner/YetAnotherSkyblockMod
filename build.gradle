@@ -13,7 +13,7 @@ buildscript {
 
 apply plugin: "net.minecraftforge.gradle.forge"
 
-version = "1.1"
+version = "1.2"
 group= "me.djtheredstoner"
 archivesBaseName = "YetAnotherSkyblockMod"
 
@@ -38,7 +38,6 @@ minecraft {
 
 dependencies {
     provided files("libs/modcore.jar")
-    provided files("libs/potionhud.jar")
 }
 
 jar {

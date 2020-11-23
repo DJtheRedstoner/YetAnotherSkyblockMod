@@ -2,6 +2,7 @@ package me.djtheredstoner.yetanotherskyblockmod;
 
 import club.sk1er.mods.core.util.MinecraftUtils;
 import com.google.common.collect.Sets;
+import me.djtheredstoner.yetanotherskyblockmod.commands.PartyReportCommand;
 import me.djtheredstoner.yetanotherskyblockmod.commands.YASMCommand;
 import me.djtheredstoner.yetanotherskyblockmod.config.YASMConfig;
 import me.djtheredstoner.yetanotherskyblockmod.listeners.YASMListener;
@@ -18,7 +19,7 @@ import net.minecraftforge.fml.common.gameevent.TickEvent;
 
 import java.util.Set;
 
-@Mod(modid = "yetanotherskyblockmod", name = "YetAnotherSkyblockMod", version = "1.1", acceptedMinecraftVersions = "[1.8.9]", clientSideOnly = true)
+@Mod(modid = "yetanotherskyblockmod", name = "YetAnotherSkyblockMod", version = "1.2", acceptedMinecraftVersions = "[1.8.9]", clientSideOnly = true)
 public class YetAnotherSkyblockMod {
 
     @Mod.Instance
@@ -40,6 +41,7 @@ public class YetAnotherSkyblockMod {
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(new YASMListener());
         ClientCommandHandler.instance.registerCommand(new YASMCommand());
+        ClientCommandHandler.instance.registerCommand(new PartyReportCommand());
 
         oofModDetected = Loader.isModLoaded("refractionoof");
     }

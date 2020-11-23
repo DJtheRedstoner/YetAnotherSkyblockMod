@@ -20,6 +20,18 @@ public class ASMHooks {
                 case "guiIngameAbsorption":
                     shouldDisable = config.hideAbsorption;
                     break;
+                case "patcherArmor":
+                    shouldDisable = config.hidePatcherArmor;
+                    break;
+                case "patcherDamageGlance":
+                    shouldDisable = config.hidePatcherDamage;
+                    break;
+                case "patcherItemCountGlance":
+                    shouldDisable = config.hidePatcherItemCount;
+                    break;
+                case "patcherEnchGlance":
+                    shouldDisable = config.hidePatcherEnch;
+                    break;
                 default:
                     shouldDisable = false;
             }
