@@ -37,6 +37,7 @@ public class ClassTransformer implements IClassTransformer {
         registerTransformer(new OofModListenerTransformer());
         registerTransformer(new PatcherArmorStatusRendererTransformer());
         registerTransformer(new PatcherHotbarItemsHandlerTransformer());
+        registerTransformer(new CanelexKeystrokesTransformer());
     }
 
     private void registerTransformer(ITransformer transformer) {
