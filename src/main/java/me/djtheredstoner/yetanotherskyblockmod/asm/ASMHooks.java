@@ -32,6 +32,9 @@ public class ASMHooks {
                 case "patcherEnchGlance":
                     shouldDisable = config.hidePatcherEnch;
                     break;
+                case "canelexKeystrokes":
+                    shouldDisable = config.hideCanelexKeystrokes;
+                    break;
                 default:
                     shouldDisable = false;
             }

@@ -74,6 +74,16 @@ public class YASMConfig extends Vigilant {
 
     @Property(
         type = PropertyType.SWITCH,
+        name = "Hide keystrokes",
+        description = "Hides Canelex's keystrokes HUD in skyblock.",
+        category = "General",
+        subcategory = "HUD Elements"
+    )
+    public boolean hideCanelexKeystrokes;
+
+
+    @Property(
+        type = PropertyType.SWITCH,
         name = "Slayer Boss Oof",
         description = "Plays Oof sound when you kill a slayer boss.\n§cRequires Oof Mod.",
         category = "General",
