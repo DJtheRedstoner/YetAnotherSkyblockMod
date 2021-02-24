@@ -30,7 +30,7 @@ Configure the mod with `/yasm` or `yetanotherskyblockmod`
 | :---: | :---: | :--- |
 | [Powns' Potion HUD](https://www.youtube.com/watch?v=yI4p-2eK7yw) | 1.0 | Download link in video description
 | [Powns' Armor HUD](https://download.powns.dev/armorhud189) | 1.1 | Hides all 5 elements
-| [Oof Mod](https://www.youtube.com/watch?v=bUelJG5kGK0) | 2.0.2 | Required for slayer boss oof
+| [Oof Mod](https://www.youtube.com/watch?v=bUelJG5kGK0) | 3.0 | Required for slayer boss oof
 | [Patcher](https://sk1er.club/mods/patcher) | 1.5.1 | Hides damage, count and enchant glance, hides armor protection percentage
 | [Canelex's Keystrokes](https://www.youtube.com/watch?v=-dMg_NiFdjs) | 1.0 | Download link in video description
 | [Sk1er Keystrokes](https://sk1er.club/mods/keystrokesmod) | 8.0.2 | 
