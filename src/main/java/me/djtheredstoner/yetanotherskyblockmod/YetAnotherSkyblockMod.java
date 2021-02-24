@@ -19,7 +19,7 @@ import net.minecraftforge.fml.common.gameevent.TickEvent;
 
 import java.util.Set;
 
-@Mod(modid = "yetanotherskyblockmod", name = "YetAnotherSkyblockMod", version = "1.2", acceptedMinecraftVersions = "[1.8.9]", clientSideOnly = true)
+@Mod(modid = "yetanotherskyblockmod", name = "YetAnotherSkyblockMod", version = "1.3", acceptedMinecraftVersions = "[1.8.9]", clientSideOnly = true)
 public class YetAnotherSkyblockMod {
 
     @Mod.Instance

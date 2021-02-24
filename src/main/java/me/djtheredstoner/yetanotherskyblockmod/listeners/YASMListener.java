@@ -22,7 +22,7 @@ public class YASMListener {
 
     private void playOofSound() {
         if(YetAnotherSkyblockMod.instance.oofModDetected && oofModListener != null) {
-            oofModListener.playOofSound();
+            oofModListener.djPlayOofSound(yasm.config.slayerOofSound);
         }
     }
 

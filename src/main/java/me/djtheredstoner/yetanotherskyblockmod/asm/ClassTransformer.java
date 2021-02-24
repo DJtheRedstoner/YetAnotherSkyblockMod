@@ -38,6 +38,7 @@ public class ClassTransformer implements IClassTransformer {
         registerTransformer(new PatcherArmorStatusRendererTransformer());
         registerTransformer(new PatcherHotbarItemsHandlerTransformer());
         registerTransformer(new CanelexKeystrokesTransformer());
+        registerTransformer(new Sk1erKeystrokesTransformer());
     }
 
     private void registerTransformer(ITransformer transformer) {
@@ -68,8 +69,15 @@ public class ClassTransformer implements IClassTransformer {
             transformer.transform(node, transformedName);
         }
 
+        int flags = ClassWriter.COMPUTE_FRAMES;
+
+        //there has to be a better way but i cba
+        if(name.equals("us.nickfraction.oofmod.listeners.OofModListener")) {
+            flags = 0;
+        }
+
         // what?????
-        ClassWriter writer = new ClassWriter(ClassWriter.COMPUTE_FRAMES);
+        ClassWriter writer = new ClassWriter(flags);
 
         try {
             // write™

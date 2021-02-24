@@ -74,12 +74,12 @@ public class YASMConfig extends Vigilant {
 
     @Property(
         type = PropertyType.SWITCH,
-        name = "Hide keystrokes",
-        description = "Hides Canelex's keystrokes HUD in skyblock.",
+        name = "Hide Keystrokes",
+        description = "Hides Canelex's & Sk1er's keystrokes in skyblock.",
         category = "General",
         subcategory = "HUD Elements"
     )
-    public boolean hideCanelexKeystrokes;
+    public boolean hideKeystrokes;
 
 
     @Property(
@@ -90,6 +90,16 @@ public class YASMConfig extends Vigilant {
         subcategory = "Sound Effects"
     )
     public boolean slayerOof;
+
+    @Property(
+        type = PropertyType.SELECTOR,
+        name = "Slayer Boss Oof Sound",
+        description = "Select which Oof Mod sound you want to play when you kill a slayer boss.",
+        category = "General",
+        subcategory = "Sound Effects",
+        options = {"Bow", "Melee", "Rod", "Projectile"}
+    )
+    public int slayerOofSound = 1;
 
     public YASMConfig() {
         super(new File("./config/yetanotherskyblockmod.toml"));

@@ -6,22 +6,22 @@ import org.objectweb.asm.tree.*;
 
 import static org.objectweb.asm.Opcodes.*;
 
-public class CanelexKeystrokesTransformer implements ITransformer {
+public class Sk1erKeystrokesTransformer implements ITransformer {
     @Override
     public String[] getClassName() {
-        return new String[]{"net.canelex.keystrokes.KeystrokesMod"};
+        return new String[]{"keystrokes.render.KeystrokesRenderer"};
     }
 
     @Override
     public void transform(ClassNode classNode, String name) {
         for (MethodNode method : classNode.methods) {
-            if(method.name.equals("renderGUI")) {
-                method.instructions.insert(insertCanelexKeystrokesHook());
+            if(method.name.equals("onRenderTick")) {
+                method.instructions.insert(insertSk1erKeystrokesHook());
             }
         }
     }
 
-    public InsnList insertCanelexKeystrokesHook() {
+    public InsnList insertSk1erKeystrokesHook() {
         InsnList list = new InsnList();
         list.add(new LdcInsnNode("keystrokes"));
         list.add(new MethodInsnNode(INVOKESTATIC, ClassTransformer.hookClass, "isSkyblock", "(Ljava/lang/String;)Z", false));

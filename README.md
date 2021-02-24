@@ -11,7 +11,7 @@ My contribution to the collection of horribly made mods created because of Hypix
 YetAnotherSkyblockMod (or YASM for short) is my contribution to the
 collection of horribly made mods created because of Hypixel Skyblock.
 
-Configure the mod with `/yasm`
+Configure the mod with `/yasm` or `yetanotherskyblockmod`
 
 ## Discord
 
@@ -32,3 +32,5 @@ Configure the mod with `/yasm`
 | [Powns' Armor HUD](https://download.powns.dev/armorhud189) | 1.1 | Hides all 5 elements
 | [Oof Mod](https://www.youtube.com/watch?v=bUelJG5kGK0) | 2.0.2 | Required for slayer boss oof
 | [Patcher](https://sk1er.club/mods/patcher) | 1.5.1 | Hides damage, count and enchant glance, hides armor protection percentage
+| [Canelex's Keystrokes](https://www.youtube.com/watch?v=-dMg_NiFdjs) | 1.0 | Download link in video description
+| [Sk1er Keystrokes](https://sk1er.club/mods/keystrokesmod) | 8.0.2 | 
