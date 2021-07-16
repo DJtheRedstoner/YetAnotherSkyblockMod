@@ -1,7 +1,7 @@
 package me.djtheredstoner.yetanotherskyblockmod;
 
-import club.sk1er.mods.core.util.MinecraftUtils;
 import com.google.common.collect.Sets;
+import gg.essential.api.EssentialAPI;
 import me.djtheredstoner.yetanotherskyblockmod.commands.PartyReportCommand;
 import me.djtheredstoner.yetanotherskyblockmod.commands.YASMCommand;
 import me.djtheredstoner.yetanotherskyblockmod.config.YASMConfig;
@@ -34,14 +34,12 @@ public class YetAnotherSkyblockMod {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-        ModCoreInstaller.initializeModCore(Minecraft.getMinecraft().mcDataDir);
-
         config.preload();
 
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(new YASMListener());
-        ClientCommandHandler.instance.registerCommand(new YASMCommand());
-        ClientCommandHandler.instance.registerCommand(new PartyReportCommand());
+        new YASMCommand().register();
+        new PartyReportCommand().register();
 
         oofModDetected = Loader.isModLoaded("refractionoof");
     }
@@ -53,7 +51,7 @@ public class YetAnotherSkyblockMod {
 
             Minecraft mc = Minecraft.getMinecraft();
 
-            if (mc != null && mc.theWorld != null && MinecraftUtils.isHypixel()) {
+            if (mc != null && mc.theWorld != null && EssentialAPI.getMinecraftUtil().isHypixel()) {
                 ScoreObjective sidebarObjective = mc.theWorld.getScoreboard().getObjectiveInDisplaySlot(1);
 
                 if (sidebarObjective != null) {

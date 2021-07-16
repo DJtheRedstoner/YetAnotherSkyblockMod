@@ -1,37 +1,30 @@
 package me.djtheredstoner.yetanotherskyblockmod.commands;
 
-import club.sk1er.mods.core.ModCore;
+import gg.essential.api.EssentialAPI;
+import gg.essential.api.commands.Command;
+import gg.essential.api.commands.DefaultHandler;
 import me.djtheredstoner.yetanotherskyblockmod.YetAnotherSkyblockMod;
-import net.minecraft.command.CommandBase;
-import net.minecraft.command.CommandException;
-import net.minecraft.command.ICommandSender;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.Collection;
 import java.util.Collections;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
-public class YASMCommand extends CommandBase {
-    @Override
-    public String getCommandName() {
-        return "yetanotherskyblockmod";
+public class YASMCommand extends Command {
+    public YASMCommand() {
+        super("yetanotherskyblockmod");
     }
 
+    @Nullable
     @Override
-    public List<String> getCommandAliases() {
-        return Collections.singletonList("yasm");
+    public Set<Alias> getCommandAliases() {
+        return Collections.singleton(new Alias("yasm"));
     }
 
-    @Override
-    public String getCommandUsage(ICommandSender sender) {
-        return null;
-    }
-
-    @Override
-    public void processCommand(ICommandSender sender, String[] args) throws CommandException {
-        ModCore.getInstance().getGuiHandler().open(YetAnotherSkyblockMod.instance.config.gui());
-    }
-
-    @Override
-    public int getRequiredPermissionLevel() {
-        return -1;
+    @DefaultHandler
+    public void handle() {
+        EssentialAPI.getGuiUtil().openScreen(YetAnotherSkyblockMod.instance.config.gui());
     }
 }

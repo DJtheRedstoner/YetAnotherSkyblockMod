@@ -1,6 +1,6 @@
 package me.djtheredstoner.yetanotherskyblockmod.listeners;
 
-import club.sk1er.mods.core.util.MinecraftUtils;
+import gg.essential.api.EssentialAPI;
 import me.djtheredstoner.yetanotherskyblockmod.YetAnotherSkyblockMod;
 import me.djtheredstoner.yetanotherskyblockmod.asm.interfaces.IOofModListener;
 import net.minecraftforge.client.event.ClientChatReceivedEvent;
@@ -13,7 +13,7 @@ public class YASMListener {
 
     @SubscribeEvent
     public void onChat(ClientChatReceivedEvent event) {
-        if(!(MinecraftUtils.isHypixel() && yasm.isOnSkyblock)) return;
+        if(!(EssentialAPI.getMinecraftUtil().isHypixel() && yasm.isOnSkyblock)) return;
         String message = event.message.getUnformattedText();
         if(message.equals("  NICE! SLAYER BOSS SLAIN!") && yasm.config.slayerOof) {
             playOofSound();
