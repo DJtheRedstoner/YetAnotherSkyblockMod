@@ -9,7 +9,7 @@ import static org.objectweb.asm.Opcodes.*;
 public class Sk1erKeystrokesTransformer implements ITransformer {
     @Override
     public String[] getClassName() {
-        return new String[]{"keystrokes.render.KeystrokesRenderer"};
+        return new String[]{"keystrokes.render.KeystrokesRenderer", "club.sk1er.mods.keystrokes.render.KeystrokesRenderer"};
     }
 
     @Override
